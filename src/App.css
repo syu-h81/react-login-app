@@ -10,10 +10,9 @@
 
 .Title {
   font-size: 4.0rem;
-}
-
-.login-Block {
-  padding: 4% 0 0 31%;
+  @media(max-width: 760px) {
+    font-size: 2rem;
+  }
 }
 
 button {
@@ -26,16 +25,28 @@ button {
   text-decoration: none;
   display: block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 0 auto;
   cursor: pointer;
 }
 
-.userinfo-Block {
-  padding: 0 0 8% 10%;
+.signoutButton {
+  margin-top: 40px;
 }
 
+.userinfo-Block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 .userinfo-Name {
-  padding-left: 5%;
+  display: block;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .userinfo-Img {

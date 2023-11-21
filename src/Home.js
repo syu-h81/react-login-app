@@ -34,15 +34,17 @@ function SignInButton () {
 // サインアウトボタン
 function SignOutButton () {
   return (
-    <button onClick={() => auth.signOut()}>サインアウト</button>
+    <button className="signoutButton" onClick={() => auth.signOut()}>サインアウト</button>
   );
 }
 
 function UserInfo () {
   return (
     <div className="userinfo-Block">
-      <p className="userinfo-Name">{auth.currentUser.displayName}</p>
-      <img className="userinfo-Img" src={auth.currentUser.photoURL} alt="" />
+      <div className="userinfo-Inner">
+        <p className="userinfo-Name">{auth.currentUser.displayName}</p>
+        <img className="userinfo-Img" src={auth.currentUser.photoURL} alt="" />
+      </div>
     </div>
   );
 }
